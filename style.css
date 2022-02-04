@@ -1,0 +1,271 @@
+/* 
+blanc : #F2F2F2
+gris clair : #A6A6A6
+gris : #595959
+gris fonce : #262626
+noir : #0D0D0D 
+*/
+
+body {
+  background-color: #f2f2f2;
+  margin: 0px;
+  font-family: "robotolight";
+}
+
+header {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+  font-family: "ralewaythin";
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 1;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+header nav {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+header nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#accueil {
+  display: flex;
+}
+#imageAccueil {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageAccueil img {
+  filter: drop-shadow(30px 30px 0px #0d0d0d);
+  border: solid #0d0d0d 0px;
+  width: auto;
+  height: 70%;
+}
+
+#texteAccueil {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+}
+
+#texteAccueil p {
+  width: 90%;
+}
+
+#pageaccueil {
+  text-align: center;
+  height: 110vh;
+  margin-top: -50px;
+}
+
+#pageaccueil #plusbas {
+  font-size: 50px;
+  margin-top: -30px;
+}
+
+button {
+  background-color: #a6a6a6;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: "robotobold";
+  border: solid 0px;
+  border-radius: 15px;
+  height: 40px;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #262626;
+}
+
+#pageCV {
+  background-color: #262626;
+  color: #f2f2f2;
+  height: 100vh;
+}
+
+#pageCV h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#CV {
+  display: flex;
+  padding-top: 50px;
+}
+#CVgauche {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#CVdroit {
+  width: 60%;
+  height: 100%;
+  padding-right: 10%;
+}
+
+#CVdroit h1 {
+  margin: 0px;
+}
+
+#Compétences {
+  background-color: #a6a6a6;
+  border-radius: 10px;
+  width: 80%;
+}
+
+#Compétences #top {
+  background-color: #595959;
+  text-align: center;
+  border-radius: 10px 10px 0 0px;
+}
+
+#Compétences h2 {
+  margin: 0px;
+}
+
+#Compétences h3 {
+  margin: 0px;
+}
+
+#Compétences #bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  height: 80vh;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.skill .description {
+  color: #0d0d0d;
+}
+
+.skill .description .jauge {
+  height: 10px;
+  background-color: #595959;
+  border-radius: 10px;
+}
+
+.skill .description .jaugeRemp {
+  height: 10px;
+  background-color: green;
+  border-radius: 10px;
+}
+
+#CVdroit ul li {
+  text-align: justify;
+}
+
+#CVdroit ul li div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#CVdroit ul li div h3:first-child {
+  text-decoration: underline;
+}
+
+/* Création */
+
+#creaBanner {
+  height: 50vh;
+  width: 100%;
+  background-image: url(img/paysage-og.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#creaBanner h1 {
+  font-weight: bolder;
+  font-size: 70px;
+  color: #f2f2f2;
+  background-color: #0d0d0d;
+  padding: 20px 70px 20px 70px;
+}
+
+#creation {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4vw;
+  padding: 4vw;
+}
+.carte {
+  width: 100%;
+  height: auto;
+  background-color: #a6a6a6;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carte img {
+  object-fit: cover;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.creaDesc {
+  padding: 0px 10px 0px 10px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.creaDesc a {
+  color: blue;
+  text-decoration: underline;
+}
