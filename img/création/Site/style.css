@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+/*______FV (First View)______*/
+.row{
+    margin: 0px;
+}
+
+.full-screen{
+    height: 100vh;
+    max-width: 100vw;
+}
+
+
+.text-fv h1{
+    font-family: Jockey One;
+    font-size: 9em;
+    color: white;
+    line-height: 1em;
+}
+
+.parralax{
+    background-image: url("https://media.giphy.com/media/ME9unQE4hBwIatDNMt/source.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+}
+.logo-img{
+    height: 80vh;
+    width: auto;
+}
+
+.container-fv{
+    margin-left: 10%;
+    margin-right: 10%;
+    transform: translate(0, 20px);
+    text-shadow: 0 0 5px black;
+}
+
+.scroll{
+    width: 15em;
+    font-size: 40px;
+}
+.scroll a{
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+/*______FIN_FV (First View)______*/
+
+
+/* ____________________________________NAV________________________________ */
+
+/* Position et animation */
+
+
+#navbar{
+    position: fixed;
+    top: -500px;
+    transition: top 0.3s;  
+}
+.navbar{
+    width: 100vw;
+    max-width: 100vw;
+    z-index: 1;
+    font-family: Jockey One;
+    font-size: 1.2em;
+}
+
+
+.navbar-logo-img{
+    height: 40px;
+} 
+
+.navbar-logo-text{
+    font-family: Jockey One;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.flag{
+    height: 30px;
+    width: auto;
+}
+
+.NotSelected{
+    filter: brightness(50%);
+}
+/* Affichage */
+
+/* ____________________________________FIN_NAV________________________________ */
+
+
+/* ____________________________________MAIN_______________________________ */
+
+#presentation {
+    scroll-margin-top: 3em;
+}
+
+.txt{
+    text-align: justify;
+}
+.box{
+    margin: 30px;
+}
+
+.titre{
+    font-family: Jockey One;
+    font-size: 3em;
+    border-bottom: black solid 3px;
+    margin-right: 80%;
+}
+
+.title-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: Jockey One;
+}
+
+.title-section-h2{
+    scroll-margin-top: 3em;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.img-gallery{
+    object-fit: cover;
+    width: 400px;
+    height: 200px;
+}
+.img-gallery:hover{
+    filter: brightness(70%) blur(2px);
+    transition: top 1s;
+}
+
+.gallery-card:hover{
+    font-size: 2em;
+}
+
+.gallery-card{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    color: white;
+    font-family: Jockey One;
+    font-size: 0px;
+    text-shadow: 0 0 5px black;
+}
+
+.gallery-txt{
+    pointer-events:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#Evenement1, #Evenement2, #Evenement3, #Evenement4{
+    display: none;
+    scroll-margin-top: 10em;
+}
+
+#Evenement1:target, #Evenement2:target, #Evenement3:target, #Evenement4:target{
+    display: block;
+}
+
+
+
+
+.events a{
+    text-decoration: none;
+    font-family: Jockey One;
+    font-size: 2em;
+    color: black;
+}
+
+.events a:active{
+    color: blue;
+    border-bottom: solid blue 3px;
+}
+
+/* ___________________________FOOTER__________________ */
+
+footer{
+    background-color: #262626;
+    color: #F2F2F2;
+    height: 100px;
+}
+
+.img-footer-png{
+    height: 80px;
+    width: auto;
+}
+
+.f-title{
+    font-weight: 800;
+}
+
+.f-icon{
+    font-size: 2.5em;
+}
+
+/* ___________________________FIN_FOOTER__________________ */
+
+
+@media (max-width: 1090px){
+    .text-fv h1{
+        font-size: 8em;
+    }
+    .scroll{
+        font-size: 2em;
+        width: 10em;
+    }
+    .logo-img{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 977px){
+    .text-fv h1{
+        font-size: 6em;
+    }
+    .scroll{
+        font-size: 2em;
+        width: 7em;
+    }
+    .logo-img{
+        height: 60vh;
+    }
+    .div-fv{
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 750px){
+    .text-fv h1{
+        font-size: 4em;
+    }
+    .scroll{
+        font-size: 2em;
+        width: 7em;
+    }
+    .logo-img{
+        height: 40vh;
+    }
+    .img-footer-png{
+        height: 50px;
+        width: auto;
+    }
+    
+    .f-title{
+        font-weight: 800;
+    }
+    
+    .f-icon{
+        font-size: 1em;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+    .div-fv{
+        margin-top: 20vh;
+    }
+}
+
+@media (max-width: 750px){
+    .logo-img{
+        height: 30vh;
+    }
+
+}
+
+@media (max-width: 580px){
+    .text-fv h1{
+        font-size: 3em;
+    }
+    .scroll{
+        font-size: 1em;
+        width: 7em;
+    }
+    .logo-img{
+        height: 30vh;
+    }
+}

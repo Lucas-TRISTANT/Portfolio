@@ -92,7 +92,7 @@ header nav ul li a:hover {
   margin-top: -30px;
 }
 
-button {
+#button {
   background-color: #a6a6a6;
   color: #f2f2f2;
   font-size: 18px;
@@ -101,9 +101,12 @@ button {
   border-radius: 15px;
   height: 40px;
   width: 200px;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
 }
 
-button:hover {
+#button:hover {
   background-color: #262626;
 }
 
@@ -176,8 +179,10 @@ button:hover {
 }
 
 .skill img {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  max-width: 100px;
+  height: auto;
+  max-height: 100px;
   margin-right: 10px;
   border-radius: 10px;
 }
@@ -247,13 +252,13 @@ button:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
 
 .carte img {
-  object-fit: cover;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 20px 20px 0px 0px;
+  max-width: 20vw;
+  max-height: 20vw;
+  border-radius: 20px;
 }
 
 .creaDesc {
@@ -268,4 +273,45 @@ button:hover {
 .creaDesc a {
   color: blue;
   text-decoration: underline;
+}
+
+/* Contact */
+
+#contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact div form {
+  height: 70%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact div form input {
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+
+#contact div form #message {
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  text-align: start;
 }
